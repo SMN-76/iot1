@@ -1,5 +1,5 @@
 html{
-  scroll-behavior: smooth;
+  scroll-behavior: scroll;
 }
 *{
   margin: 0;
@@ -8,14 +8,15 @@ html{
   text-transform: uppercase;
   font-family: sans-serif;
 }
+
 :root{/*
   --font: #111;
   --main: #f2bf97;
   --main-b: #02bf9730;
   --back: #eee;*/
   --font: #eee;
-  --main: #00ccbb;
-  --main-b: #00ccbb23;
+  --main: #ffbb00;
+  --main-b: #ffbb0023;
   --back: #222;
 }
 body{
@@ -116,8 +117,9 @@ section{
   background: var(--back);
 }
 .mid_details .mid_content .mid_box{
-  background: #f00;
-
+  flex: 1;
+  min-width: 300px;
+  margin: 20px 50px 20px 0;
 }
 .mid_details .mid_content:before{
   content: '';
@@ -430,6 +432,9 @@ section{
   line-height: 60px;
 }
 
+.mid_details .mid_content .mid_box{
+  margin: 50px 0;
+}
 }
 
 @media only screen and (max-width: 500px)
@@ -510,13 +515,3 @@ section{
   right: 35px;
   }
 }
-
-
-
-
-
-
-
-
-
-
